@@ -112,7 +112,7 @@ else
                           <div class="col-sm-6">
 							<div class="row">
                             <label class="col-sm-4">Company:</label>
-                            <label class="col-sm-8">Reno Box Pte Ltd</label>
+                            <label class="col-sm-8">Firetronics Pte Ltd</label>
                             </div>
                           </div>
 

@@ -107,7 +107,7 @@ td p{
     <h1>Inventory of Work Activities</h1>
     <table id="risk_register_2" style="width:100%;">
         <tr >
-                    <td rowspan="1" colspan="4" style="width:75%"><b>Department:Reno Box Pte Ltd</b></td>
+                    <td rowspan="1" colspan="4" style="width:75%"><b>Department:Firetronics Pte Ltd</b></td>
                     <td rowspan="1" colspan="1" style="width:25%"><b>Date <?php echo $date = date('d-m-Y', strtotime($risk['createdDate']));?></b></td>
         </tr>
          <tr style="background-color:#817F88; color:white;">
@@ -213,7 +213,7 @@ td p{
             ?>
             <tr >
                     <td rowspan="1" colspan="1" style="width:15%;vertical-align: middle;">Department:</td>
-                    <td rowspan="1" colspan="1" style="width:20%;vertical-align: middle;">Reno Box Pte Ltd</td>
+                    <td rowspan="1" colspan="1" style="width:20%;vertical-align: middle;">Firetronics Pte Ltd</td>
                     <td rowspan="1" colspan="1" style="width:25%;vertical-align: middle;">RA Leader :<?php echo $valueAllUser['name'];
                     echo '<img width="40" src="staff/'.$valueAllUser["signature"].'"/>';?></td>
                     <td rowspan="3" colspan="1" style="width:15%;vertical-align: middle;">Approved by:Signature:</td>

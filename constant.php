@@ -1,69 +1,54 @@
 <?php
-$raMembers = array(
-	"name1" => "W. K. Chan",
-	"name2" => "Liang Kan Fat",
-	"" => ""
-);
-$raDesignations = array(
-	"name1" => "Manager",
-	"name2" => "Foreman",
-	"" => ""
-);
-$raSinatures = array(
-	"name1" => "chan.png",
-	"name2" => "fat.png",
-);
-/* 
-// GENERAL
-Working at height (using ladder)
-Working at height (using scaffold)
-Working at height (more than 3m)
-Physical hazards (sharp objects)
-Chemical hazards (general)
-Falling objects
-Electrical hazard
-Ergonomic hazard
-Slip,trip fall hazard
-Confined space
-Fire Hazard
-Gas Hazard
-Bad Weather (lightning)
-Bad weather (Hot weather)
-Bad weather (haze)
-loading and unloading with traffic
-Reckless driving
-Heavy load by manual handling
-Material on uneven ground (unstable)
-Working at height (using boomlift)
-Working at height (using sisscor lift)
-Poor planning for lfting operation
-Flying particles
-High pressure vessel (compressor)
-// RENOBOX
-Noise
-Dust
-Misuse of tools 
-Damaged tools
-Poor House keeping
-Exposed cables/Damaged electrical parts
-Inexperienced workers
-Improper manual handling/Bulky material
-Strenuous activity
-Exposed mechanical moving part/Pinch point
-Chemical hazards(Silica)
-Chemical hazards(Glue)
-Incompatible work
-//OFFICE
-Heavy load
-Bulky Loads
-Unstable Loads
-Awkward Postures
-Static Postures
-Uncomfortable workstation
-ageing workforce
-*/
 $harzard = array(
 	//General
+	"s_e" => "Sharp edges (e.g. from blade and product)",
+	"b_p_h_o_w_o_n_p" => "Bulky product hitting other workers or nearby person",
+	"d_o_p" => "Dropping of product",
+	"h_g_d_c_p" =>	"Heat generated during cutting process",
+	"s_p_d_c_p" => "Sparks produced during cutting process",
+	"f_p_d_c_p" => "Fumes produced during cutting process",
+	"n_p_d_c_p" => "Noise produced  during cutting process",
+	"p_h_o_w_a" => "Poor housekeeping of work area",
+	"d_p_c_a_h_a" => "Dust pollution created at housekeeping areas",
+	"p_m_o_c_m" => "Poor maintenance of cutting machine",
+	"r_a" =>	"Repetitive action",
+	"p_l_p" => "Poor lifting posture",
+	"i_c_a_w" => "Improper coordination among workers(e.g. Planning, communication) during manual handling",
+	"u_p_g_c_d_t_o_m" => "Uneven / poor ground conditions during transporting of material",
+	"t_u_o_s_m" => "Transporting unstable/odd shape material",
+	"c_o_l_i_c_a" => "Carrying of load in congested area",
+	"s_o_p_a_h" => "Storing of product at height",
+	"s_o_h_t" => "Storage of hand tools (e.g. hammer, cutting tool, hand tools)",
+	"s_o_c_m" => "Storage of  combustible material",
+	"p_h_o_s_a" => "Poor housekeeping of storage area",
+	"f_p_d_c_p" => "Flying particles during cutting process",
+	"e_h_f_u_e_h_d" => "Electrical hazard from using electrical hand drills",
+	"n_p_d_w" => "Noise produced during work",
+	"i_p_m_o_h_t" => "Improper maintenance of hand tools",
+	"v_h_f_c_i_o_v_o_o" => "Vehicular hazard/ Forklift crashing into other vehicles or objects",
+	"s_o_v_b_h_f" => "Staff or visitors being hit by forklift",
+	"o_f_f_t_f" => "Object falling from the forklift",
+	"u_f_o" => "untrained forklift operator",
+	"f_i_a_i" => "Fumes inhalation and irritation.",
+	"w_a_h" => "Working at height",
+	"f_i_o_i_s_a" => "Falling items or items striking against other equipment or structure while loading / unloading",
+	"w_a_h_b_s" => "Working at height (Boomlift/Scissorlift)",
+	"o_r_t_m" => "Over raising the MEWP",
+	"i_p_o_m_o_t_m" => "Improper placement of material on the MEWP",
+	"f_o_l_g" => "Failure of lifting gear",
+	"o_o_l_m" => "Overloading of lifting machine",
+	"i_r_o_l" => "Improper rigging of load (lifting)",
+	"u_u_g_f_l_o" => "Unstable/uneven ground for lifting operation",
+	"i_t_c_d_t_g_t_l_e" => "Insufficient traffic controller deployed to guide the lorry entering /exiting the worksite.",
+	"l_d_a_f_f_l_b_w_l" => "Loads disengaging and falling from lorry bed when lorry /lorry crane in motion",
+	"t_o_m_f_t" => "Toppling of machineries from trailer",
+	"d_t" => "Damaged tools (hammer)",
+	"m_o_h" => "Misuse of hammer",
+	"f_o_w_w_o_t" => "Falling Objects when working on trunking",
+	"s_o_h_b_p_p" => "Struck  or hit by the pressurised pipe/ hoses",
+	"i_p_p_w" => "Incompetent person performing wiring",
+	"w_o_e" => "Wiring of equipment",
+	//Firetronics
 	"w_a_h_l" => "Working at height (using ladder)",
 	"w_h_l_3m"	=> "Working at height (less than 3m)",
 	"w_h_m_3m"	=> "Working at height (more than 3m)",
@@ -150,6 +135,73 @@ $severity = array(
 				"10"=>"2"
 );
 $existing_risk_control=array(
+	"s_e" => array(
+		"0" => "Ensure blade or product is provided with guarding",
+		"1" => "Wearing of gloves"),
+	"b_p_h_o_w_o_n_p" => array(
+		"0" => "Worker briefed to be vigilant of nearby persons",
+		"1" => "Ensure proper communication",
+		"2" => "Banksmen to be deployed as a guide"),
+	"d_o_p" => array(
+		"0" => "Ensure the surroundings nearby is slip-free",
+		"1" => "Buddy system to be implemented for manual handling",
+		"2" => "Handler to wear safety boots" ),
+	"h_g_d_c_p" =>	array(
+		"0" => "Have break or rest at regular intervals", 
+		"1" => "Ensure work area is well ventilated or provided with fans"),
+	"s_p_d_c_p" => array(
+		"0" => "Do the cutting process at an open area",
+		"1" => "Fire extinguisher placed nearby",
+		"2" => "No flammable material placed nearby",
+		"3" => "Ensure proper PPE is provided such as face mask and hand gloves",
+		"4" => "Ensure that no incompatible work nearby ",
+		"5" => "Under close supervision of the supervisor",
+		"6" => "RA briefing to be conducted",
+		"7" => "Hot work PTW or hot checklist is applied and adhered to",
+		"8" => "RA briefing to be conducted",
+		"9" => "Hot work PTW or hot checklist is applied and adhered to"),
+	"f_p_d_c_p" => array(),
+	"n_p_d_c_p" => array(),
+	"p_h_o_w_a" => array(),
+	"d_p_c_a_h_a" => array(),
+	"p_m_o_c_m" => array(),
+	"r_a" =>	array(),
+	"p_l_p" => array(),
+	"i_c_a_w" => array(),
+	"u_p_g_c_d_t_o_m" => array(),
+	"t_u_o_s_m" => array(),
+	"c_o_l_i_c_a" => array(),
+	"s_o_p_a_h" => array(),
+	"s_o_h_t" => array(),
+	"s_o_c_m" => array(),
+	"p_h_o_s_a" => array(),
+	"f_p_d_c_p" => array(),
+	"e_h_f_u_e_h_d" => array(),
+	"n_p_d_w" => array(),
+	"i_p_m_o_h_t" => array(),
+	"v_h_f_c_i_o_v_o_o" => array(),
+	"s_o_v_b_h_f" => array(),
+	"o_f_f_t_f" => array(),
+	"u_f_o" => array(),
+	"f_i_a_i" => array(),
+	"w_a_h" => array(),
+	"f_i_o_i_s_a" => array(),
+	"w_a_h_b_s" => array(),
+	"o_r_t_m" => array(),
+	"i_p_o_m_o_t_m" => array(),
+	"f_o_l_g" => array(),
+	"o_o_l_m" => array(),
+	"i_r_o_l" => array(),
+	"u_u_g_f_l_o" => array(),
+	"i_t_c_d_t_g_t_l_e" => array(),
+	"l_d_a_f_f_l_b_w_l" => array(),
+	"t_o_m_f_t" => array(),
+	"d_t" => array(),
+	"m_o_h" => array(),
+	"f_o_w_w_o_t" => array(),
+	"s_o_h_b_p_p" => array(),
+	"i_p_p_w" => array(),
+	"w_o_e" => array(),
 	"w_a_h_l" => array(
 		"0" => "Proper maintenance of the PPE to be carried out monthly",
 		"1" => "Briefing to be conducted before start of work",

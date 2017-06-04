@@ -95,7 +95,7 @@ $afterSevenYears = date('Y-m-d H:i:s', strtotime('+3 years'));
    <div class="claer-fix"></div>
 
     <div class="row"  style="padding-bottom: 10px;">
-    		<div class="col-sm-5" style="text-align:left; padding:0px"><strong>Reno Box Pte Ltd</strong></div>
+    		<div class="col-sm-5" style="text-align:left; padding:0px"><strong>Firetronics Pte Ltd</strong></div>
             <div class="col-sm-7" style="padding:0px; text-align:right;">
 
                           <?php
