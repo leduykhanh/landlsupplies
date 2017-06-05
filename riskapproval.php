@@ -143,7 +143,7 @@ session_start();
 
       Please click on the link below to approve the Risk assessment.
 
-      Site link : http://qesafety.com/autora/firetronics/
+      Site link : https://qesafety.com/autora/firetronics/
 
       User name : <?php echo $staffName['email'];?>
 
