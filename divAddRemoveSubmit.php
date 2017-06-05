@@ -463,7 +463,7 @@ alert(attrName);
                           <div class="col-sm-6">
 
                             <label class="col-sm-4">Company:</label>
-                            <label class="col-sm-8">Reno Box Pte Ltd</label>
+                            <label class="col-sm-8">Firetronics Pte Ltd</label>
                           </div>
 
                           <div class="col-sm-6">

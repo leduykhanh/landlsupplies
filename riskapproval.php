@@ -118,12 +118,12 @@ session_start();
       //define the receiver of the email
       $to = $staffName['email'];
       //define the subject of the email
-      $subject = 'new approval request for you';
+      $subject = 'New approval request for you';
       //create a boundary string. It must be unique
       //so we use the MD5 algorithm to generate a random hash
       $random_hash = md5(time());
       //define the headers we want passed. Note that they are separated with \r\n
-      $headers = "From: william@renobox.com.sg\r\nReply-To: william@renobox.com.sg";
+      $headers = "From: alex@firetronics.com.sg\r\nReply-To: alex@firetronics.com.sg";
       //add boundary string and mime type specification
       $headers .= "\r\nContent-Type: multipart/alternative; boundary=\"PHP-alt-".$random_hash."\"";
       //define the body of the message.
@@ -143,7 +143,7 @@ session_start();
 
       Please click on the link below to approve the Risk assessment.
 
-      Site link : http://renobox.com.sg/autora/
+      Site link : http://qesafety.com/autora/firetronics/
 
       User name : <?php echo $staffName['email'];?>
 
@@ -289,7 +289,7 @@ $('.deleteWorkActivity').click(function(e){
                         <div class="row form-row">
                             <div class="col-sm-2"><label>Company:</label></div>
                             <div class="col-sm-4">
-                                <label>Reno Box Pte Ltd</label>
+                                <label>Firetronics Pte Ltd</label>
                             </div>
 
                             <div class="col-sm-2"><label>Reference No:</label></div>
