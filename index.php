@@ -2,7 +2,7 @@
 session_start();
 include_once('config.php');
 
-if($_SESSION['adminid'])
+if(isset($_SESSION['adminid']) && $_SESSION['adminid'])
 {
     ?><script type="text/javascript">window.location.assign("listwork_activity.php")</script>
     <?php
@@ -99,7 +99,7 @@ body {
                                 <a href="#"><img width=150 class="center-block" src="images/logo.png"/></a>
                             </div>
 
-                            <h3 class="head_login" style="font-family:CALIBRI">Risk Assessment Management Tool</h3>
+                            <h3 class="head_login" style="font-family:CALIBRI">Risk Assessment Tool</h3>
                             <div class=" head_login">
 
                                         <?php
