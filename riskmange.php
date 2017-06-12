@@ -2,7 +2,7 @@
 include_once 'config.php';
 session_start();
 
-if(!$_SESSION['adminid_firetronics_firetronics'])
+if(!$_SESSION['adminid_firetronics'])
 {
     ?><script type="text/javascript">window.location.assign("index.php")</script>
     <?php
@@ -79,7 +79,7 @@ define('NON_ACTIVE', 0);
  else
   {
 
-     $riskassessment = "INSERT INTO `riskassessment` (`id`, `createdBy`, `location`, `process`, `createdDate`, `approveDate`, `revisionDate`, `approveBy`, `status`,`expiry_date`) VALUES (NULL, '".$_SESSION['adminid_firetronics_firetronics']."', '".$_POST['location']."', '".$_POST['process']."', '".$creationDate."', NULL, '".$creationDate."', NULL, '".$status."',".$_POST["expiry_date"].");";
+     $riskassessment = "INSERT INTO `riskassessment` (`id`, `createdBy`, `location`, `process`, `createdDate`, `approveDate`, `revisionDate`, `approveBy`, `status`,`expiry_date`) VALUES (NULL, '".$_SESSION['adminid_firetronics']."', '".$_POST['location']."', '".$_POST['process']."', '".$creationDate."', NULL, '".$creationDate."', NULL, '".$status."',".$_POST["expiry_date"].");";
       $insert_riskassessment=mysqli_query($con, $riskassessment);
       $riskassessmentId = mysqli_insert_id($con);
       // echo $riskassessment;
