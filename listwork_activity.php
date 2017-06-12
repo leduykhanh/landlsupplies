@@ -17,7 +17,7 @@ session_start();
 </style>
 <?php
 
- if(isset($_SESSION['adminid'])=="")
+ if(isset($_SESSION['adminid_firetronics'])=="")
  {
 
  ?><script type="text/javascript">window.location.assign('index.php');</script>
@@ -34,7 +34,7 @@ $afterSevenYears = date('Y-m-d H:i:s', strtotime('+3 years'));
 
 
 
-      $updateSql = "UPDATE  `riskassessment` SET  `status` =  '$_GET[updateStatus]',`approveDate` =  '$today',`revisionDate` =  '$afterSevenYears',`approveBy` =  '$_SESSION[adminid]',`approverEmail` =  '".$_SESSION['useremail']."' WHERE  `id` =$_GET[riskid]";
+      $updateSql = "UPDATE  `riskassessment` SET  `status` =  '$_GET[updateStatus]',`approveDate` =  '$today',`revisionDate` =  '$afterSevenYears',`approveBy` =  '$_SESSION[adminid_firetronics]',`approverEmail` =  '".$_SESSION['useremail']."' WHERE  `id` =$_GET[riskid]";
 
 
 

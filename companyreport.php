@@ -2,7 +2,7 @@
 session_start();
 include_once 'config.php';
  //print_r($_SESSION);
- if(isset($_SESSION['adminid'])=='')
+ if(isset($_SESSION['adminid_firetronics'])=='')
  {
  	?>
  	<script type="text/javascript">window.location.assign('index.php');</script>

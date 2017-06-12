@@ -1,7 +1,7 @@
 <?php include_once 'config.php';
 session_start();
 include_once 'header.php';
-if(!$_SESSION['adminid'])
+if(!$_SESSION['adminid_firetronics'])
 {
     ?><script type="text/javascript">window.location.assign("index.php")</script>
     <?php
