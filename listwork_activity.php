@@ -17,7 +17,7 @@ session_start();
 </style>
 <?php
 
- if(isset($_SESSION['adminid_firetronics'])=="")
+ if(isset($_SESSION['adminid_landsupplies'])=="")
  {
 
  ?><script type="text/javascript">window.location.assign('index.php');</script>
@@ -34,7 +34,7 @@ $afterSevenYears = date('Y-m-d H:i:s', strtotime('+3 years'));
 
 
 
-      $updateSql = "UPDATE  `riskassessment` SET  `status` =  '$_GET[updateStatus]',`approveDate` =  '$today',`revisionDate` =  '$afterSevenYears',`approveBy` =  '$_SESSION[adminid_firetronics]',`approverEmail` =  '".$_SESSION['useremail']."' WHERE  `id` =$_GET[riskid]";
+      $updateSql = "UPDATE  `riskassessment` SET  `status` =  '$_GET[updateStatus]',`approveDate` =  '$today',`revisionDate` =  '$afterSevenYears',`approveBy` =  '$_SESSION[adminid_landsupplies]',`approverEmail` =  '".$_SESSION['useremail']."' WHERE  `id` =$_GET[riskid]";
 
 
 
@@ -95,7 +95,7 @@ $afterSevenYears = date('Y-m-d H:i:s', strtotime('+3 years'));
    <div class="claer-fix"></div>
 
     <div class="row"  style="padding-bottom: 10px;">
-    		<div class="col-sm-5" style="text-align:left; padding:0px"><strong>Firetronics Pte Ltd</strong></div>
+    		<div class="col-sm-5" style="text-align:left; padding:0px"><strong>L&L Supplies Pte Ltd</strong></div>
             <div class="col-sm-7" style="padding:0px; text-align:right;">
 
                           <?php

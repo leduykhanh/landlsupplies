@@ -2,7 +2,7 @@
 session_start();
  include_once 'header.php';
  include_once 'config.php';
- if(isset($_SESSION['adminid_firetronics'])=="")
+ if(isset($_SESSION['adminid_landsupplies'])=="")
  {
 
  ?><script type="text/javascript">window.location.assign('index.php');</script>
@@ -289,7 +289,7 @@ $('.deleteWorkActivity').click(function(e){
                         <div class="row form-row">
                             <div class="col-sm-2"><label>Company:</label></div>
                             <div class="col-sm-4">
-                                <label>Firetronics Pte Ltd</label>
+                                <label>L&L Supplies Pte Ltd</label>
                             </div>
 
                             <div class="col-sm-2"><label>Reference No:</label></div>

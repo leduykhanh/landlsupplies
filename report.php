@@ -6,7 +6,7 @@ if(!$_GET['id'])
 	header('Location:listwork_activity.php');
 }
 
- if(isset($_SESSION['adminid_firetronics'])=="")
+ if(isset($_SESSION['adminid_landsupplies'])=="")
  {
  
  ?><script type="text/javascript">window.location.assign('login.php');</script>

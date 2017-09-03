@@ -1,7 +1,7 @@
 <?php include_once 'config.php';
 session_start();
 include_once 'header.php';
-if(!$_SESSION['adminid_firetronics'])
+if(!$_SESSION['adminid_landsupplies'])
 {
     ?><script type="text/javascript">window.location.assign("index.php")</script>
     <?php
@@ -112,7 +112,7 @@ else
                           <div class="col-sm-6">
 							<div class="row">
                             <label class="col-sm-4">Company:</label>
-                            <label class="col-sm-8">Firetronics Pte Ltd</label>
+                            <label class="col-sm-8">L&L Supplies Pte Ltd</label>
                             </div>
                           </div>
 
@@ -358,7 +358,7 @@ $cntval = 1;
                           } ?>
                           <div class="row">
                             <div id="add_others_injury_<?php echo $wrk_act; ?>_<?php echo $wrk_act; ?>"></div>
-                            <input type="hidden" name="hazardsOthersInjuryCount[]" id="hazardsOthersInjuryCount" value="1" />
+                            <input type="hidden" name="hazardsOthersInjuryCount[]" id="hazardsOthersInjuryCount" value="0" />
                             <input type="button" class="col-sm-3 btn btn-primary add_others_injury" data-wrk ="<?php echo $wrk_act; ?>" data-haz ="<?php echo $wrk_act; ?>" value="Add others"  />
                           </div>
 

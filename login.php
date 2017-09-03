@@ -30,7 +30,7 @@ setcookie('remember_pass', $_POST['password'], $year);
 			$result = mysqli_fetch_assoc($run_user);
 			$_SESSION['email']=$email;
 			$_SESSION['useremail'] = $result['email'];
-			$_SESSION['adminid_firetronics'] = $result['id'];
+			$_SESSION['adminid_landsupplies'] = $result['id'];
             $_SESSION['name'] = $result['name'];
 		
 			echo "<script>window.open('riskregister.php','_self')</script>";

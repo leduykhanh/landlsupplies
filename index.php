@@ -2,7 +2,7 @@
 session_start();
 include_once('config.php');
 
-if(isset($_SESSION['adminid_firetronics']) && $_SESSION['adminid_firetronics'])
+if(isset($_SESSION['adminid_landsupplies']) && $_SESSION['adminid_landsupplies'])
 {
     ?><script type="text/javascript">window.location.assign("listwork_activity.php")</script>
     <?php
@@ -37,7 +37,7 @@ setcookie('remember_pass', $_POST['password'], $year);
 			$result = mysqli_fetch_assoc($run_user);
 			$_SESSION['email']=$email;
 			$_SESSION['useremail'] = $result['email'];
-			$_SESSION['adminid_firetronics'] = $result['id'];
+			$_SESSION['adminid_landsupplies'] = $result['id'];
             $_SESSION['name'] = $result['name'];
 
 			echo "<script>window.open('listwork_activity.php','_self')</script>";

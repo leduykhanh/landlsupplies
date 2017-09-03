@@ -8,9 +8,9 @@
  *dbName = Name of your DataBase
  **********************************************************************/
 $dbHost = 'localhost';
-$dbUser = 'firetronics_jk';
-$dbPass = 'JangkooI$HanSom3';//'admin@123';
-$dbName = 'firetronics';
+$dbUser = 'landlsupplies';
+$dbPass = 'landlsupplies';//'admin@123';
+$dbName = 'landlsupplies';
 $con = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName)
         or die('Error Connecting to MySQL DataBase');
 

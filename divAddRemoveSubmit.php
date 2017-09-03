@@ -1,6 +1,6 @@
 <?php session_start(); include_once 'header.php';
 
-if(!$_SESSION['adminid_firetronics'])
+if(!$_SESSION['adminid_landsupplies'])
 {
     ?><script type="text/javascript">window.location.assign("index.php")</script>
     <?php
@@ -463,7 +463,7 @@ alert(attrName);
                           <div class="col-sm-6">
 
                             <label class="col-sm-4">Company:</label>
-                            <label class="col-sm-8">Firetronics Pte Ltd</label>
+                            <label class="col-sm-8">L&L Supplies Pte Ltd</label>
                           </div>
 
                           <div class="col-sm-6">
